@@ -53,6 +53,79 @@
                 <div class="title col-12">
                     <h1>PRODUCTS</h1>
                 </div>
+                <div class="product-list col-8">
+                    <div class="product col-6">
+                        <div class="product-title col-12">
+    
+                            <h1>01. {{ cafe1.name }}</h1>
+                        </div>
+                        <div class="product-info col-9">
+                            <p>
+                                {{ cafe1.description }} 
+                            </p>
+                        </div>
+                        <div class="product-rating col-7">
+                            <h2>
+                                ROASTING: <span class="rating">{{ cafe1.roasting }}</span>
+                            </h2>
+                            <h2>
+                                INTENSITY: <span class="rating">{{ cafe1.intensity }}</span>
+                            </h2>
+                        </div>
+                        <div class="number-1 col-5">
+                            <img src={{ cafe1.numberOne }} alt="foto">
+                        </div>  
+                    </div>
+                    <div class="foto price col-5">
+                        <img src={{ cafe1.images }} alt="foto">
+                        <div class="triangle">
+                        </div>
+                        <p class="oldPrice">${{cafe1.price}}</p>
+                        <p class="newPrice">${{cafe1.newPrice}}</p>
+                    </div>
+                    <div class="foto col-5">
+                        <img src={{ cafe2.images }} alt="foto">
+                    </div>
+                    <div class="product col-6">
+                        <div class="product-title col-12">
+                            <h1>02. {{ cafe2.name }}</h1>
+                        </div>
+                        <div class="product-info col-9">
+                            <p>
+                                {{ cafe2.description }}
+                            </p>
+                        </div>
+                        <div class="product-rating col-12">
+                            <h2>
+                                ROASTING: <span class="rating">{{ cafe2.roasting }}</span>
+                            </h2>
+                            <h2>
+                                INTENSITY: <span class="rating">{{ cafe2.intensity }}</span>
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="product col-6">
+                        <div class="product-title col-12">
+                            <h1>03. {{ cafe3.name }}</h1>
+                        </div>
+                        <div class="product-info col-9">
+                            <p>
+                                {{ cafe3.description }}
+                            </p>
+                        </div>
+                        <div class="product-rating col-12">
+                            <h2>
+                                ROASTING: <span class="rating">{{ cafe3.roasting }}</span>
+                            </h2>
+                            <h2>
+                                INTENSITY: <span class="rating">{{ cafe3.intensity }}</span>
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="foto col-5">
+                        <img src={{ cafe3.images }} alt="foto">
+                    </div>
+                </div>
             </div>
         </script>
 
@@ -60,6 +133,54 @@
             <div class="about">
                 <div class="title-about col-12">
                     <h1>ABOUT US</h1>
+                </div>
+                <div class="carol col-6">
+                    <div class="main-carousel">
+                        <div class="carousel-cell col-12">
+                            <div class="box-image col-4">
+                            <img src="/images/1.png" alt="foto">
+                            </div>
+                            <div class="box-description col-8">
+                                <h2 class="box-tittle">Ping <span class="bold">Nihao</span></h2>
+                                <p>
+                                    Ping is the youngest in the team. He doesn't<br>
+                                    like calling coffe a mysterious act.<br>
+                                    He says, a good coffe is like a mathematical<br>
+                                    formula. Once you figured in out, every<br>
+                                    coffe  you make is a masterpiece.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-cell col-12">
+                            <div class="box-image col-4">
+                                <img src="/images/2.png" alt="foto">
+                            </div>
+                            <div class="box-description col-8">
+                                <h2 class="box-tittle">Max <span class="bold">Selfish</span></h2>
+                                <p>
+                                   Max is the austrian barist with yeats of<br>
+                                   experience from the gotels across the whole<br>
+                                   Europe. "Venezuela coffe was a lightening<br>
+                                   experience for me! I have never drink such<br>
+                                   an amazing coffe!", he says.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-cell col-12">
+                            <div class="box-image col-4">
+                                <img src="/images/3.png" alt="foto">
+                            </div>
+                            <div class="box-description col-8">
+                                <h2 class="box-tittle">Elizabeth <span class="bold">Doherty</span></h2>
+                                <p>
+                                    Experienced barist from Bagamas<br>
+                                    She says that Venezuela has opened her<br>
+                                    eyes on caffee. "It's not about the taste", she<br>
+                                    says. "It's all about the feelings".
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </script>
