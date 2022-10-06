@@ -4,7 +4,7 @@ import utils from './utils.js';
 
 const app = {
   initData: function() {
-    const thisApp = this;
+    const thisApp = this; 
     thisApp.data = {};
 
     const url = settings.db.url + '/' + settings.db.products;
@@ -21,8 +21,6 @@ const app = {
 
   initPage: function(){
     const thisApp = this;
-
-
     thisApp.pages = document.querySelector(select.containerOf.pages);
     thisApp.navLinks = document.querySelectorAll(select.nav.links);
 
@@ -62,7 +60,6 @@ const app = {
 
   initAbout: function(){
     const thisApp = this;
-
     const generatedHTML = templates.about();
     thisApp.aboutElement = utils.createDOMFromHTML(generatedHTML);
     const aboutContainer = document.querySelector(select.containerOf.home);
@@ -71,7 +68,6 @@ const app = {
 
   initProduct: function(){
     const thisApp = this;
-      
     const generatedHTML = templates.product(thisApp.data.products);
     const createDOM = utils.createDOMFromHTML(generatedHTML);
     const container = document.querySelector(select.containerOf.products);

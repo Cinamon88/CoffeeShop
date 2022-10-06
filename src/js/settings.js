@@ -9,12 +9,14 @@ export const select = {
   templateOf: {
     contact: '#template-contact-page',
     about: '#template-about-page',
+    product: '#template-products-page',
   },
 
   containerOf: {
     home: '#home-wrapper',
     contact: '#contact-wrapper',
     pages: '#pages',
+    products: '#products-list',
   },
 
   nav: {
@@ -29,4 +31,5 @@ export const className = {
 export const templates = {
   about: Handlebars.compile(document.querySelector(select.templateOf.about).innerHTML),
   contact: Handlebars.compile(document.querySelector(select.templateOf.contact).innerHTML),
+  product: Handlebars.compile(document.querySelector(select.templateOf.product).innerHTML),
 };
