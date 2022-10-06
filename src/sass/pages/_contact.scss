@@ -1,0 +1,48 @@
+.contact{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    font-family: $mainFont;
+    position: absolute;
+    top: 150vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    
+    .form{
+      text-align: center;
+      margin-top: 50px;
+    
+      label{
+        letter-spacing: 3px;
+        margin: 10px 0;
+        font-weight: bold;
+      }
+    
+      input{
+        width: 280px;
+        border: 2px solid $blackColor;
+        margin: 10px 0;
+      }
+    
+      .text-area{
+        height: 100px;
+      }
+    
+      button{
+        margin: 10px 0;
+        padding: 15px 25px;
+        letter-spacing: 3px;
+        background: $primaryColor;
+        border: none;
+        color: $whiteColor;
+        text-align: center;
+        font-weight: bold;
+    
+      }
+      
+    }
+    
+  }
