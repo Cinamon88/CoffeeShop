@@ -5,3 +5,16 @@ export const settings = {
   },
 };
 
+export const select = {
+  templateOf: {
+    contact: '#template-contact-page',
+  },
+
+  containerOf: {
+    contact: '#contact-wrapper',
+  }
+};
+
+export const templates = {
+  contatc: Handlebars.compile(document.querySelector(select.templateOf.contact).innerHTML),
+};
