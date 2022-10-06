@@ -3,3 +3,13 @@
   font-weight: 400;
   font-size: 16px;
 }
+
+.main-caption {
+  left: 50%;
+  top: 50%;
+  right: auto;
+  bottom: auto;
+  padding-top: 0;
+  padding-bottom: 0;
+  color: $color-font-one;
+}

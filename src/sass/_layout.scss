@@ -1,3 +1,16 @@
+.main {
+  height: 100vh;
+  position: relative;
+  background-image: url('https://iili.io/QuK7Jj.md.png" alt="QuK7Jj.md.png" border="0"');
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.main-inner img {
+  height: 100%;
+  object-fit: cover;
+}
+
 .container {
   max-width: 1140px;
   padding: 0 20px;
