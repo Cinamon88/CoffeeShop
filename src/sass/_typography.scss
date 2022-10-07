@@ -1,0 +1,124 @@
+// HEADER //
+
+.brand-title {
+  padding-top: 15px;
+  color: $brandColor;
+  z-index: 2;
+  font-weight: 900;
+  font-family: $mainFont;
+
+
+  h1 {
+    z-index: 99;
+    line-height: 10px;
+    letter-spacing: 10px;
+  }
+
+  h3 {
+    z-index: 99;
+    font-size: 15px;
+    letter-spacing: 5px;
+  }
+}
+
+.header-nav {
+  text-align: right;
+  padding-top: 30px;
+  font-weight: 600;
+  padding-right: 25px;
+  z-index: 99;
+  
+  a {
+    color: $navbarColor;
+    text-decoration: none;
+    padding-left: 20px;
+    letter-spacing: 2px;
+    z-index: 99;
+  }
+}
+
+.header-title {
+  color: $headerColor;
+  font-size: 50px;
+  padding: 60px 130px;
+  z-index: 2;
+  position: relative;
+  letter-spacing: 5px;
+  font-family: $mainFont;
+  
+  
+  .sub-title-1 {
+    line-height: 10px;
+    z-index: 2;
+    font-weight: 600;
+    margin-left: 80px;
+  }
+
+  .sub-title-2 {
+    text-align: right;
+    line-height: 40px;
+    position: relative;
+    z-index: 2;
+    font-weight: 600;
+    margin-right: 90px;
+  }
+} 
+
+
+// PAGES //
+
+.page-title {
+  text-align: center;
+  position: relative;
+  color: $pageSubTitleColor;
+  letter-spacing: 10px;
+  font-family: $mainFont;
+  font-weight: bold;
+  margin: 65px 0;
+  font-size: 25px;
+  z-index: 99;
+}
+
+.page-title::after {
+  position: absolute;
+  content: '';
+  bottom: 10px;
+  left: 50%;
+  width: 500px;
+  height: 6px;
+  transform: translateX(-50%);
+  background: #BEA67C;
+}
+
+.product-title h1 {
+  font-family: $mainFont;
+  font-weight: bold;
+  color: $productNameColor;
+  font-size: 30px;
+  letter-spacing: 4px;
+  position: relative;
+  margin-bottom: 0;
+}
+
+.product-title h1::after {
+  position: absolute;
+  content: '';
+  bottom: -35px;
+  left: 10%;
+  width: 110px;
+  height: 4px;
+  transform: translateX(-50%);
+  background: #BEA67C;
+}
+
+
+// FOOTER //
+
+.footer h4 {
+  font-family: $mainFont;
+  text-align: center;
+  padding-bottom: 34px;
+  color: $footerColor;
+  font-size: 15px;
+  font-weight: 600;
+}
