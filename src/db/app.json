@@ -1,40 +1,36 @@
 {
-    "products":{
-        "cafe1": {
+    "products": {
+        "coffee1": {
             "name": "LA LAGARTIJA",
-            "price":"36",
-            "newPrice":"",
-            "description":"Mysterious and treachorous... The best choice for the start of your journey! It will procide you a rich delicious flavor.",
-            "images":[
+            "price": "36",
+            "newPrice": "",
+            "description": "Mysterious and treachorous... The best choice for the start of your journey! It will procide you a rich delicious flavor.",
+            "images": [
                 "/images/coffee-1.png"
             ],
-            "numberOne":[
-                
+            "numberOne": [
+                "/images/badge.png"
             ],
-
-            "roasting":"5/10",
-            "intensity":"6/10"
-  
+            "roasting": "5/10",
+            "intensity": "6/10"
         },
-        "cafe2": {
+        "coffee2": {
             "name": "EL TIGRE",
-            "description":"Really dark coffee, only for the real gourments. It has bitter flavor of grapefruits and is mixed with a little bit of peanuts with caramel.",
-            "images":[
+            "description": "Really dark coffee, only for the real gourments. It has bitter flavor of grapefruits and is mixed with a little bit of peanuts with caramel.",
+            "images": [
                 "/images/coffee-2.png"
-             ],
-            "roasting":"8/10",
-            "intensity":"9/10"
-    
+            ],
+            "roasting": "8/10",
+            "intensity": "9/10"
         },
-        "cafe3": {
-            "name": "EL TIGRE",
-            "description":"Sweet and intense with a bif amount of different flavors. Caramel, grapes, strwaberry, you name it! It's great choice for warm summer days.",
-            "images":[
+        "coffee3": {
+            "name": "LA CUCARACHA",
+            "description": "Sweet and intense with a bif amount of different flavors. Caramel, grapes, strwaberry, you name it! It's great choice for warm summer days.",
+            "images": [
                 "/images/coffee-3.png"
-                ],
-            "roasting":"3/10",
-            "intensity":"7/10"
-    
+            ],
+            "roasting": "3/10",
+            "intensity": "7/10"
         }
     }
 }
