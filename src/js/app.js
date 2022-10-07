@@ -1,8 +1,16 @@
 /* eslint-disable no-undef */
-import { settings } from './settings.js';
+import { settings, select, } from './settings.js';
 
 
 const app = {
+  initPages: function () {
+    const thisApp = this;
+
+
+    thisApp.pages = document.querySelector(select.containerOf.pages).children;
+    thisApp.navLinks = document.querySelectorAll(select.nav.links);
+  },
+
   initData: function() {
     const thisApp = this;
     thisApp.data = {};
@@ -19,7 +27,9 @@ const app = {
 
   init: function(){
     const thisApp = this;
+    thisApp.initPages();
     thisApp.initData();
+    
   }
 };
 
