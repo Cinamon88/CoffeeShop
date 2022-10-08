@@ -20,28 +20,21 @@
   font-family: $mainFont;
   z-index: 2;
 
-  .container-header {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+  .header-discover {
+    margin-top: 120px;
+    color: $whiteColor;
+    text-align: center;
+    letter-spacing: 5px;
+    font-family: $mainFont;
     z-index: 2;
-  
-    .header-discover {
-      margin-top: 120px;
-      color: $whiteColor;
-      text-align: center;
-      letter-spacing: 5px;
-      font-family: $mainFont;
-      z-index: 2;
 
-      .icon-arrow {
+    .icon-arrow {
         font-size: 35px;
         z-index: 2;
-      }
     }
   }
 }
+
 
 .header-title::after {
   position: absolute;

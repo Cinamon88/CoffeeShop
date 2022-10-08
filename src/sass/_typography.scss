@@ -40,7 +40,7 @@
 .header-title {
   color: $headerColor;
   font-size: 50px;
-  padding: 60px 130px;
+  padding: 60px;
   z-index: 2;
   position: relative;
   letter-spacing: 5px;
@@ -51,7 +51,7 @@
     line-height: 10px;
     z-index: 2;
     font-weight: 600;
-    margin-left: 80px;
+    margin-left: auto;
   }
 
   .sub-title-2 {
@@ -60,7 +60,7 @@
     position: relative;
     z-index: 2;
     font-weight: 600;
-    margin-right: 90px;
+    margin-right: auto;
   }
 } 
 
