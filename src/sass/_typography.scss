@@ -9,13 +9,13 @@
 
 
   h1 {
-    z-index: 99;
+    z-index: 2;
     line-height: 10px;
     letter-spacing: 10px;
   }
 
   h3 {
-    z-index: 99;
+    z-index: 2;
     font-size: 15px;
     letter-spacing: 5px;
   }
@@ -26,14 +26,14 @@
   padding-top: 30px;
   font-weight: 600;
   padding-right: 25px;
-  z-index: 99;
+  z-index: 2;
   
   a {
     color: $navbarColor;
     text-decoration: none;
     padding-left: 20px;
     letter-spacing: 2px;
-    z-index: 99;
+    z-index: 2;
   }
 }
 
@@ -76,7 +76,7 @@
   font-weight: bold;
   margin: 65px 0;
   font-size: 25px;
-  z-index: 99;
+  z-index: 2;
 }
 
 .page-title::after {
