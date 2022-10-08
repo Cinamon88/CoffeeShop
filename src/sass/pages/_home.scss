@@ -1,24 +1,10 @@
 /* ABOUT US */
 
-.about::before {
+.about-description {
     position: absolute;
-    content: '';
-    bottom: 0;
-    width: 200%;
-    opacity: 60%;
-    height: 100vh;
-    transform: translateX(-50%);
-    background: black;
-    z-index: 1;
-}  
-  
-.about {
-    background-image: url(../images/about.jpg);
-    background-size: 100% 100%;
-    background-position: center;
-    height: 100vh;
-    max-width: 100%;
-    position: relative;
-    font-family: $mainFont;
-    z-index: 2;
+    text-align: center;
+    padding-bottom: 50px;
+    font-weight: 600;
+    font-size: 25px;
 }
+
