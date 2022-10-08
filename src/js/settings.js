@@ -5,9 +5,10 @@ export const select = {
     contactPage: '#template-contact-page',
   },
   containerOf: {
-    home: '#home-wrapper',
-    products: '#products-wrapper',
-    contact: '#contact-wrapper',
+    homeId: 'home',
+    home: '.home-wrapper',
+    products: '#product-list',
+    contact: '.contact-wrapper',
     pages: '#pages',
   },
   nav: {
