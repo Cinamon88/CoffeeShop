@@ -1,7 +1,7 @@
 export const select = {
   templateOf: {
+    homePage: '#template-home-page',
     menuProduct: '#template-products-page',
-    aboutPage: '#template-about-page',
     contactPage: '#template-contact-page',
   },
   containerOf: {
@@ -16,8 +16,13 @@ export const select = {
   },
 };
 
-export const className = {
-  active: 'active',
+export const classNames = {
+  nav: {
+    active: 'active',
+  },
+  pages: {
+    active: 'active',
+  },
 };
 
 export const settings = {
@@ -29,7 +34,7 @@ export const settings = {
 
 
 export const templates = {
+  homePage: Handlebars.compile(document.querySelector(select.templateOf.homePage).innerHTML),
   menuProduct: Handlebars.compile(document.querySelector(select.templateOf.menuProduct).innerHTML),
-  aboutPage: Handlebars.compile(document.querySelector(select.templateOf.aboutPage).innerHTML),
   contactPage: Handlebars.compile(document.querySelector(select.templateOf.contactPage).innerHTML),
 };
