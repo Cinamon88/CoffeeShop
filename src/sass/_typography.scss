@@ -84,10 +84,10 @@
   content: '';
   bottom: 10px;
   left: 50%;
-  width: 500px;
-  height: 6px;
+  width: 600px;
+  height: 5px;
   transform: translateX(-50%);
-  background: #BEA67C;
+  background: $pageSubTitleColor;
 }
 
 .product-title h1 {
@@ -135,11 +135,12 @@
 
 // FOOTER //
 
-/* .footer h4 {
+.footer h4 {
   font-family: $mainFont;
   text-align: center;
-  padding-bottom: 34px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   color: $footerColor;
   font-size: 15px;
   font-weight: 600;
-} */
+} 
