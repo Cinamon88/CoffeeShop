@@ -33,7 +33,7 @@
         </div>
     </header>
     <div id="pages">
-        <section id="home">
+        <section id="home" class="active">
             <div class="home-wrapper container"></div>
         </section>
         <section id="products">
@@ -43,7 +43,7 @@
             <div class="contact-wrapper container"></div>
         </section>
     </div>
-    <script id="template-home-page" type="text/x-handlebars-template">
+    <!--<script id="template-home-page" type="text/x-handlebars-template">-->
         <div class="home container">
             <div class="page-title about col-12">
                 <h1>ABOUT US</h1>
@@ -58,13 +58,13 @@
                 </p>
             </div>
         </div>
-    </script>
-    <script id="template-products-page" type="text/x-handlebars-template">
+    
+    <!-- <script id="template-products-page" type="text/x-handlebars-template"> -->
         <div class="products container">
             <div class="page-title col-12">
                 <h1>PRODUCTS</h1>
             </div>
-            <div class="product-list col-8">
+            <div class="product-list col-10">
                 <div class="product col-6">
                     <div class="product-title col-12">
                         <h1>01. {{ coffee1.name }}</h1>
@@ -93,15 +93,15 @@
                     <img src={{ coffee2.images }} alt="EL TIGRE">
                 </div>
                 <div class="product col-6">
-                    <div class="product-title col-12">
+                    <div class="product-title-2 col-10">
                         <h1>02. {{ coffee2.name }}</h1>
                     </div>
-                    <div class="product-info col-9">
+                    <div class="product-info col-7">
                         <p>
                             {{ coffee2.description }}
                         </p>
                     </div>
-                    <div class="product-rating col-12">
+                    <div class="product-rating col-10">
                         <h2>
                             ROASTING: <span class="rating">{{ coffee2.roasting }}</span>
                         </h2>
@@ -133,8 +133,8 @@
                 </div>
             </div>
         </div>
-    </script>
-    <script id="template-contact-page" type="text/x-handlebars-template">
+   
+    <!--<script id="template-contact-page" type="text/x-handlebars-template"> -->
         <div class="contact container">
             <div class="page-title col-12">
                 <h1>CONTACT US</h1>
@@ -149,7 +149,7 @@
                 <button type="submit" value="submit">SUBMIT</button>
             </div>
         </div>
-    </script>
+
     <!-- <div class="footer">
         <h4>2022 EL TIGRE inc.</h4>
     </div> -->
