@@ -1,5 +1,9 @@
 /* eslint-disable no-undef */
-import { settings, select,classNames } from './settings.js';
+import { settings, select, classNames } from './settings.js';
+import Products from './components/Products.js';
+import Home from './components/Home.js';
+import Contact from './components/Contact.js';
+
 
 
 const app = {
@@ -71,10 +75,35 @@ const app = {
       });
   },
 
+  initProducts: function(){
+    const thisApp = this;
+    const productsSub = document.querySelector(select.containerOf.products);
+    thisApp.products = new Products(productsSub);
+  },
+
+  initHome: function(){
+    const thisApp = this;
+    const homeSub = document.querySelector(select.containerOf.home);
+    thisApp.home = new Home(homeSub);
+  },
+
+  initContact: function(){
+    const thisApp = this;
+    const contactSub = document.querySelector(select.containerOf.contact);
+    thisApp.contact = new Contact(contactSub);
+  },
+
+
+  
+
   init: function(){
     const thisApp = this;
     thisApp.initPages();
     thisApp.initData();
+    thisApp.initProducts();
+    thisApp.initContact();
+    thisApp.initHome();
+    
     
   }
 };
