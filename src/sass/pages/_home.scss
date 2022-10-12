@@ -1,60 +1,61 @@
 /* ABOUT US */
-.home::before {
-  position: absolute;
-  content: '';
-  bottom: 0;
-  width: 100%;
-  opacity: 60%;
-  height: 100vh;
-  background: black;
-  z-index: 1;
-}
 
 .home {
-  padding-top: 20px;
   background-image: url(../images/about.jpg);
-  position: relative;
-  height: 100vh;
+  padding-top: 20px;
   background-size: 100% 100%;
-  z-index: 2;
-  font-family: $mainFont;
-  letter-spacing: 1px;
-
-  .about-page-title {
-    padding-top: 10px;
-    text-align: center;
-    position: relative;
-    color: $pageSubTitleColor;
-    letter-spacing: 10px;
-    font-family: $mainFont;
-    font-weight: bold;
-    font-size: 25px;
-    z-index: 1;
-  }
-
-  .about-page-title::after {
-    position: absolute;
-    content: '';
-    top: 115px;
-    width: 600px;
-    height: 5px;
-    transform: translateX(-50%);
-    background: $pageSubTitleColor;
-  }
-
-  .about-description{
-    position: absolute;
-    font-size: 30px;
-    font-weight: 600;
-    font-style: italic;
-    color: $whiteColor;
-    z-index: 2;
-    padding-left: 26%;
-    padding-top: 40px;
-  }
-  
-  .about-description h3 {
-    text-align: right;
-    padding-right: 380px;
-  }
+  background-position: center;
+  height: 100vh;
+  max-width: 100%;
+  position: relative;
 }
+
+.about-page-title {
+  padding-top: 10px;
+  text-align: center;
+  position: relative;
+  color: $pageSubTitleColor;
+  letter-spacing: 10px;
+  font-family: $mainFont;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.about-page-title::after {
+  position: absolute;
+  content: '';
+  top: 115px;
+  width: 600px;
+  height: 5px;
+  transform: translateX(-50%);
+  background: $pageSubTitleColor;
+}
+
+.about-description{
+  position: relative;
+  font-size: 30px;
+  font-weight: 600;
+  font-family: $mainFont;
+  font-style: italic;
+  color: $whiteColor;
+  padding-top: 40px;
+}
+
+.about-description h3 {
+  font-family: $mainFont;
+  text-align: right;
+  padding-right: 100px;
+}
+
+// FOOTER //
+
+.footer {
+  font-family: $mainFont;
+  position: relative;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: $footerColor;
+  font-size: 15px;
+  font-weight: 600;
+} 

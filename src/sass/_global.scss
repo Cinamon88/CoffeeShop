@@ -8,12 +8,7 @@ body {
 }
 
 .container {
-  width: 1155px;
+  max-width: 1140px;
   padding: 0 20px;
   margin: 0 auto;
-  opacity: 100%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
 }

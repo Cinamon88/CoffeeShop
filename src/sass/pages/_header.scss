@@ -21,7 +21,8 @@
   z-index: 2;
 
   .header-discover {
-    margin-top: 120px;
+    position: relative;
+    padding-top: 145px;
     color: $whiteColor;
     text-align: center;
     letter-spacing: 5px;
@@ -38,7 +39,7 @@
 .header-title::after {
   position: absolute;
   content: '';
-  bottom: 50px;
+  bottom: -65px;
   left: 50%;
   width: 275px;
   height: 6px;
