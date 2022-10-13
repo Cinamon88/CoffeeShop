@@ -6,12 +6,10 @@ export const select = {
   },
   
   containerOf: {
-    homeId: 'home',
-    home: '.home-wrapper',
-    products: '#product-list',
-    contact: '.contact-wrapper',
-    pages: '#pages',
-    startingPages: '.products, .home'
+    home: '#home-wrapper',
+    products: '#products-list',
+    contact: '#contact-wrapper',
+    pages: '#home, #products, #contact',
   },
 
   nav: {
@@ -21,12 +19,7 @@ export const select = {
 };
 
 export const classNames = {
-  nav: {
-    active: 'active',
-  },
-  pages: {
-    active: 'active',
-  },
+  active: 'active',
 };
 
 export const settings = {

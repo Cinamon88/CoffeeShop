@@ -1,14 +1,11 @@
 import { templates, select } from '../settings.js';
 
-class Products {
+class Product {
   constructor(element){
     const thisProducts = this;
-    
     thisProducts.render(element);
-    
   }
-    
-
+  
   render(element){
     const thisProducts = this;
     
@@ -24,6 +21,8 @@ class Products {
       select.containerOf.products
     );
   }
+
+  
 }
 
-export default Products;
+export default Product;

@@ -3,7 +3,6 @@ import { templates, select } from '../settings.js';
 class Contact {
   constructor(element){
     const thisContact = this;
-    
     thisContact.render(element);
   }
     
