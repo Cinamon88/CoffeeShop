@@ -6,10 +6,10 @@
             "newPrice": "",
             "description": "Mysterious and treachorous... The best choice for the start of your journey! It will procide you a rich delicious flavor.",
             "images": [
-                "/images/coffee-1.png"
+                "coffee-1.png"
             ],
             "numberOne": [
-                "/images/badge.png"
+                "badge.png"
             ],
             "roasting": "5/10",
             "intensity": "6/10"
@@ -18,7 +18,7 @@
             "name": "EL TIGRE",
             "description": "Really dark coffee, only for the real gourments. It has bitter flavor of grapefruits and is mixed with a little bit of peanuts with caramel.",
             "images": [
-                "/images/coffee-2.png"
+                "coffee-2.png"
             ],
             "roasting": "8/10",
             "intensity": "9/10"
@@ -27,7 +27,7 @@
             "name": "LA CUCARACHA",
             "description": "Sweet and intense with a bif amount of different flavors. Caramel, grapes, strwaberry, you name it! It's great choice for warm summer days.",
             "images": [
-                "/images/coffee-3.png"
+                "coffee-3.png"
             ],
             "roasting": "3/10",
             "intensity": "7/10"

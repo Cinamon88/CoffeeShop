@@ -4,16 +4,21 @@ export const select = {
     menuProduct: '#template-products-page',
     contactPage: '#template-contact-page',
   },
+  
   containerOf: {
     homeId: 'home',
     home: '.home-wrapper',
     products: '#product-list',
     contact: '.contact-wrapper',
     pages: '#pages',
+    startingPages: '.products, .home'
   },
+
   nav: {
     links: '.header-nav a',
   },
+
+  hidden: 'hidden'
 };
 
 export const classNames = {

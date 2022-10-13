@@ -4,10 +4,8 @@ import Products from './components/Products.js';
 import Home from './components/Home.js';
 import Contact from './components/Contact.js';
 
-
-
 const app = {
-  initPages: function () {
+  initPages: function() {
     const thisApp = this;
 
     thisApp.pages = document.querySelector(select.containerOf.pages).children;
@@ -42,7 +40,7 @@ const app = {
         window.location.hash = `#/${id}`;
       });
     }
-  },
+  },  
 
   activatePage: function (pageId) {
     const thisApp = this;
@@ -61,6 +59,8 @@ const app = {
     }
   },
 
+  
+
   initData: function() {
     const thisApp = this;
     thisApp.data = {};
@@ -72,6 +72,7 @@ const app = {
       })
       .then((parsedResponse) => {
         thisApp.data.products = parsedResponse;
+        
       });
   },
 

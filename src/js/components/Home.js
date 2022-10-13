@@ -1,11 +1,9 @@
-import { templates, select, classNames } from '../settings.js';
+import { templates, select } from '../settings.js';
 
 class Home {
   constructor(element){
     const thisHome = this;
-    
     thisHome.render(element);
-    thisHome.initWidgets();
     
   }
     
@@ -25,27 +23,6 @@ class Home {
     );
   }
 
-  initWidgets(){
-    const thisHome = this;
-
-    for(let link of thisHome.dom.links){
-      link.addEventListener('click', function(event){
-        event.preventDefault();
-
-        const hash = event.target.hash.replace('#', '');
-        const currentLink = document.querySelector('.header-nav a[href="#home"]');
-        const currentPageId = document.getElementById(select.containerOf.homeId);
-        const newPageId = document.getElementById(hash);
-        const newLink = document.querySelector(`.header-nav a[href="${event.target.hash}"]`);
-
-        window.location.hash = `#/${hash}`;
-        currentLink.classList.remove(classNames.nav.active);
-        currentPageId.classList.remove(classNames.nav.active);
-        newPageId.classList.add(classNames.pages.active);
-        newLink.classList.add(classNames.pages.active);
-      });
-    }
-  }
 }
 
 export default Home;
