@@ -3,12 +3,9 @@
 .home {
   background-image: url(../images/about.jpg);
   padding-top: 20px;
-  background-size: 100% 100%;
   background-position: center;
-  height: 100vh;
-  max-width: 100%;
-  position: relative;
-}
+  transform: translateX();
+} 
 
 .about-page-title {
   padding-top: 10px;
