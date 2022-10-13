@@ -18,7 +18,6 @@ export const select = {
     links: '.header-nav a',
   },
 
-  hidden: 'hidden'
 };
 
 export const classNames = {
