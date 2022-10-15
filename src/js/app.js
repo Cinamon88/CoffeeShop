@@ -10,33 +10,29 @@ const app = {
     thisApp.pages = document.querySelector(select.containerOf.pages).children;
     thisApp.navLinks = document.querySelectorAll(select.nav.links);
 
-    thisApp.products = document.querySelector('#products');
-    thisApp.home = document.querySelector('#home');
-    thisApp.contact = document.querySelector('#contact');
-
-    for(let clickedElement of thisApp.navLinks){
-      clickedElement.addEventListener('click', function(event){
+    for(let link of thisApp.navLinks){
+      link.addEventListener('click', function(event){
         event.preventDefault();
-        thisApp.clickId = clickedElement.getAttribute('href').replace('#','');
-        window.location.hash = `#/${id}`;
+        const clickedElement = this;
+        event.preventDefault();
+        const id = clickedElement.getAttribute('href').replace('#', '');
+        
+        const idFromHash = window.location.hash.replace('#/', '');
+        if (idFromHash){
+          thisApp.activePage(id);
+        }
       });
-
-      const idFromHash = window.location.hash.replace('#/', '');
-      if (idFromHash){
-        thisApp.activePage(idFromHash);
-      }
     }
   },
 
-  activePage(id) {
+  activePage: function(id) {
     
-    
-
     for(const page of document.querySelectorAll(select.containerOf.pages)){
       page.classList.remove(classNames.active);
     }
-
     document.querySelector('#' + id).classList.add(classNames.active);
+
+    window.location.hash = `#/${id}`;
   },
 
   initData: function() {
