@@ -14,24 +14,19 @@ const app = {
       link.addEventListener('click', function(event){
         event.preventDefault();
         const clickedElement = this;
-        event.preventDefault();
         const id = clickedElement.getAttribute('href').replace('#', '');
+
+        thisApp.activePage(id);
         
-        const idFromHash = window.location.hash.replace('#/', '');
-        if (idFromHash){
-          thisApp.activePage(id);
-        }
       });
     }
   },
 
   activePage: function(id) {
-    
     for(const page of document.querySelectorAll(select.containerOf.pages)){
       page.classList.remove(classNames.active);
     }
     document.querySelector('#' + id).classList.add(classNames.active);
-
     window.location.hash = `#/${id}`;
   },
 
