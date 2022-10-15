@@ -19,9 +19,6 @@ class Home {
     document.querySelector(select.containerOf.home).innerHTML += generatedHTML;
     
     
-    thisHome.dom.links = thisHome.dom.wrapper.querySelectorAll(
-      select.containerOf.home
-    );
   }
 
 }

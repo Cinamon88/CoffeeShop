@@ -34,7 +34,7 @@ const app = {
     const thisApp = this;
     thisApp.data = {};
     const url = settings.db.url + '/' + settings.db.products;
-    thisApp.data = {};
+    
     fetch(url)
       .then((rawResponse) => {
         return rawResponse.json();
@@ -48,6 +48,7 @@ const app = {
     const thisApp = this;
     const productsSub = document.querySelector(select.containerOf.products);
     thisApp.products = new Products(productsSub);
+    
   },
 
   initHome: function(){

@@ -17,9 +17,6 @@ class Contact {
     
     document.querySelector(select.containerOf.contact).innerHTML = generatedHTML;
     
-    thisContact.dom.links = thisContact.dom.wrapper.querySelectorAll(
-      select.containerOf.contact
-    );
   }
 }
 
