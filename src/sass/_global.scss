@@ -12,3 +12,11 @@ body {
   padding: 0 20px;
   margin: 0 auto;
 }
+
+#pages > section {
+  display: none;
+}
+
+#pages > section.active {
+  display: block;
+}
