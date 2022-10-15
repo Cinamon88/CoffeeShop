@@ -16,6 +16,7 @@ class Product {
     const generatedHTML = templates.menuProduct(thisProducts.data);
     
     document.querySelector(select.containerOf.products).innerHTML = generatedHTML;
+    document.querySelector(select.containerOf.home).innerHTML = generatedHTML;
     
     thisProducts.dom.links = thisProducts.dom.wrapper.querySelectorAll(
       select.containerOf.products

@@ -8,39 +8,35 @@ const app = {
   initPages: function() {
     const thisApp = this;
     thisApp.pages = document.querySelector(select.containerOf.pages).children;
-    thisApp.navLinks = document.querySelectorAll(select.navLinks);
+    thisApp.navLinks = document.querySelectorAll(select.nav.links);
+
+    thisApp.products = document.querySelector('#products');
+    thisApp.home = document.querySelector('#home');
+    thisApp.contact = document.querySelector('#contact');
 
     for(let clickedElement of thisApp.navLinks){
       clickedElement.addEventListener('click', function(event){
         event.preventDefault();
         thisApp.clickId = clickedElement.getAttribute('href').replace('#','');
-        const find = document.querySelector('#' + thisApp.clickId);
-
-        thisApp.products = document.querySelector('#products');
-        thisApp.home = document.querySelector('#home, #products');
-        thisApp.contact = document.querySelector('#contact');
-
-        if
-        (thisApp.clickId === 'home'){
-          thisApp.products.classList.add(classNames.active);
-          thisApp.home.classList.add(classNames.active);
-          thisApp.contact.classList.remove(classNames.active);
-
-        } else if
-        (thisApp.clickId == 'products'){
-          find.classList.add(classNames.active);
-          thisApp.home.classList.remove(classNames.active);
-          thisApp.contact.classList.remove(classNames.active);
-
-        } else if
-        (thisApp.clickId == 'contact'){
-          find.classList.add(classNames.active);
-          thisApp.home.classList.remove(classNames.active);
-          thisApp.products.classList.remove(classNames.active);
-        }
-        
+        window.location.hash = `#/${id}`;
       });
+
+      const idFromHash = window.location.hash.replace('#/', '');
+      if (idFromHash){
+        thisApp.activePage(idFromHash);
+      }
     }
+  },
+
+  activePage(id) {
+    
+    
+
+    for(const page of document.querySelectorAll(select.containerOf.pages)){
+      page.classList.remove(classNames.active);
+    }
+
+    document.querySelector('#' + id).classList.add(classNames.active);
   },
 
   initData: function() {
@@ -80,11 +76,11 @@ const app = {
 
   init: function(){
     const thisApp = this;
-    thisApp.initPages();
     thisApp.initData();
     thisApp.initProduct();
     thisApp.initContact();
     thisApp.initHome();
+    thisApp.initPages();
     
     
   }

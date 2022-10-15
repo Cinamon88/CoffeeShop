@@ -16,7 +16,7 @@ class Home {
     
     const generatedHTML = templates.homePage(thisHome.data);
     
-    document.querySelector(select.containerOf.home).innerHTML = generatedHTML;
+    document.querySelector(select.containerOf.home).innerHTML += generatedHTML;
     
     thisHome.dom.links = thisHome.dom.wrapper.querySelectorAll(
       select.containerOf.home
