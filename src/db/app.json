@@ -1,5 +1,6 @@
 {
-    "products": {
+    "products": [
+        {
         "name1": "LA LAGARTIJA",
         "price1": "36",
         "newPrice": "",
@@ -28,5 +29,6 @@
         ],
         "roasting3": "3/10",
         "intensity3": "7/10"
-    }
+        }
+    ]
 }

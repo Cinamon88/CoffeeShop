@@ -46,7 +46,7 @@ const app = {
 
   initProduct: function(){
     const thisApp = this;
-    const productsSub = document.querySelector(select.containerOf.products);
+    const productsSub = document.querySelector(select.templateOf.menuProduct);
     thisApp.products = new Products(productsSub);
     
   },

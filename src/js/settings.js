@@ -34,4 +34,5 @@ export const templates = {
   homePage: Handlebars.compile(document.querySelector(select.templateOf.homePage).innerHTML),
   menuProduct: Handlebars.compile(document.querySelector(select.templateOf.menuProduct).innerHTML),
   contactPage: Handlebars.compile(document.querySelector(select.templateOf.contactPage).innerHTML),
+  products: Handlebars.compile(document.querySelector(select.containerOf.products).innerHTML),
 };
