@@ -1,0 +1,104 @@
+/* Media */
+
+@media (max-width: 767px) and (max-width: 991px) {
+
+    // HOME //
+
+    .home {
+      height: 50vh;
+    }
+  
+    .about-page-title {
+      font-size: 20px;
+    }
+  
+    .about-page-title::after {
+      top: 90px;
+      width: 300px;
+      height: 3px;
+    }
+  
+    .about-description p{
+      font-size: 16px;
+      padding-left: 10%;
+      padding-right: 20%;
+      margin: 0 auto;
+      padding-top: 20px;
+    }
+    
+    .about-description h3 {
+      font-size: 16px;
+    }
+
+    // HEADER //
+
+    .header::before {
+        height: 50vh;
+    }  
+      
+    .header {
+        height: 50vh;
+      
+        .header-discover {
+          padding-top: 50px;
+          letter-spacing: 4px;
+          font-size: 10px;
+          
+      
+          .icon-arrow {
+            font-size: 15px;
+            z-index: 2;
+          }
+        }
+    }
+      
+    .header-title::after {
+        top: 105px;
+        width: 100px;
+        height: 2px;
+    }
+    
+    .brand-title {
+        
+        h1 {
+          line-height: 15px;
+          letter-spacing: 8px;
+          font-size: 15px;
+        }
+      
+        span {
+          font-size: 10px;
+          letter-spacing: 4px;
+        }
+    }
+      
+    .header-nav {
+        font-size: 12px;
+        display: flex;
+        
+        a {
+          padding-right: 5px;
+          letter-spacing: 0px;
+        }
+    }
+      
+      .header-title {
+        padding-top: 50px;
+        padding-left: 10px;
+        padding-right: 5px;
+        letter-spacing: 8px;
+        
+        .sub-title-1 {
+          line-height: 0px;
+          margin: 0 auto;
+          font-size: 30px;
+        }
+      
+        .sub-title-2 {
+          text-align: right;
+          line-height: 30px;
+          font-size: 30px;
+        }
+    }
+}
+
