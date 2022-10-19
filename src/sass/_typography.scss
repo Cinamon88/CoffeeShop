@@ -101,33 +101,14 @@
   letter-spacing: 4px;
   position: relative;
   margin-bottom: 0;
+  display: flex;
 }
 
 .product-title h1::after {
+
   position: absolute;
   content: '';
-  bottom: -35px;
-  left: 60px;
-  width: 100px;
-  height: 4px;
-  transform: translateX(-50%);
-  background: #BEA67C;
-}
-
-.product-title-2 h1 {
-  font-family: $mainFont;
-  font-weight: bold;
-  color: $productNameColor;
-  font-size: 30px;
-  letter-spacing: 4px;
-  position: relative;
-  margin-bottom: 0;
-}
-
-.product-title-2 h1::after {
-  position: absolute;
-  content: '';
-  bottom: -35px;
+  bottom: -25px;
   left: 60px;
   width: 100px;
   height: 4px;
